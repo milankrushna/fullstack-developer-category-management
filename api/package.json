@@ -1,0 +1,26 @@
+{
+  "name": "category-management",
+  "version": "1.0.0",
+  "description": "fullstack-developer-category-management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Styli-dev/fullstack-developer-category-management.git"
+  },
+  "author": "Milan Krushna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Styli-dev/fullstack-developer-category-management/issues"
+  },
+  "homepage": "https://github.com/Styli-dev/fullstack-developer-category-management#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "~4.16.0",
+    "express-validator": "^6.11.1",
+    "mysql2": "^2.2.5"
+  }
+}
