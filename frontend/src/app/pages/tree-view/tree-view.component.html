@@ -1,0 +1,18 @@
+<div *ngIf="dispalyNre">
+    <input type="text" class="form-control" [(ngModel)]="newCategory">
+    <button class="btn btn-sm btn-primary" (click)="saveCategory()">Save</button>
+</div>
+
+<ul *ngFor="let dt of data;let i = index" class="m-2 border-1">
+    <li class="form-control form-control-alternative height-auto">
+        <span>- {{dt.name}}
+            <a href="javascript:void(0)" (click)="addCategory(dt,i)" class=""> <i class="ni ni-fat-add"></i></a>
+            <a href="javascript:void(0)" (click)="removeCategory(dt,i,data)" class="text-red"> <i
+                    class="ni ni-fat-remove"></i></a>
+
+        </span>
+
+    </li>
+    <app-tree-view *ngIf="dt.child.length > 0" [data]="dt.child"></app-tree-view>
+
+</ul>
