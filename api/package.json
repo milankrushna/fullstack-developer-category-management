@@ -4,6 +4,8 @@
   "description": "fullstack-developer-category-management",
   "main": "index.js",
   "scripts": {
+    "server": "NODE_ENV=production node bin/server.js",
+    "start": "NODE_ENV=development node bin/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

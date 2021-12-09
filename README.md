@@ -63,3 +63,24 @@ Built an application to manage E-Commerce Fashion categories in a tree structure
 2. Commit the code and test cases to your cloned repository.
 3. DO NOT Fork this repository
 4. DO NOT raise PR to this repository
+
+
+### Install Process
+1. CLONE this Repository
+2. CREATE a database `category_management`
+3. IMPORT category.mysql file into that DB
+4. GO to api directory
+5. RUN the below command
+    1. npm i : install all the dependency
+    2. npm start : Start the api server
+6. GO to frontend directory
+7. RUN the below command
+    1. npm i : install the all dependency
+    2. ng serve : Start the category Management Dashboard 
+
+
+### Category Management
+* See [Demo](https://category-management.web.app)
+
+### Preview
+[![](https://category-management.web.app/assets/img/preview/Category-Managment.png)]
