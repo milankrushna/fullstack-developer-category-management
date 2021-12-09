@@ -21,7 +21,7 @@ exports.createCategory = async (req, res) => {
     parent_id = parent_id ? parent_id : 0
     try {
         //checking the same  CategoryName is available or not 
-        var category = await QueryHelper.findOne('category', { name })
+        var category = await QueryHelper.findOne('category', { name, parent_id })
 
         //checking the patent id is available or not
         let isParentExit = true
@@ -108,9 +108,9 @@ exports.deleteCategory = async (req, res) => {
 
     try {
 
-        // var delete_category = QueryHelper.delete('category', { id:category_id })
-        //deleteding parent category
-        // var parent_delete_category = QueryHelper.delete('category', { parent_id:category_id })
+        var delete_category = QueryHelper.delete('category', { id: category_id })
+        // deleteding parent category
+        var parent_delete_category = QueryHelper.delete('category', { parent_id: category_id })
         res.json({ status: 1, message: "category Deleted successfully!!!" })
     } catch (error) {
         res.status(400).json({
