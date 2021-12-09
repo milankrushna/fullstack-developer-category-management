@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `category`
 --
 
-CREATE TABLE `category_copy` (
+CREATE TABLE `category` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `parent_id` int(11) NOT NULL
@@ -38,7 +38,7 @@ CREATE TABLE `category_copy` (
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category_copy` (`id`, `name`, `parent_id`) VALUES
+INSERT INTO `category` (`id`, `name`, `parent_id`) VALUES
 (1, 'Women', 0),
 (2, 'Men', 0),
 (3, 'Clothing', 1),
@@ -68,7 +68,7 @@ INSERT INTO `category_copy` (`id`, `name`, `parent_id`) VALUES
 --
 -- Indexes for table `category`
 --
-ALTER TABLE `category_copy`
+ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -78,7 +78,7 @@ ALTER TABLE `category_copy`
 --
 -- AUTO_INCREMENT for table `category`
 --
-ALTER TABLE `category_copy`
+ALTER TABLE `category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
