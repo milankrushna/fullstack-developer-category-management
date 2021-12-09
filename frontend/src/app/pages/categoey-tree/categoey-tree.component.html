@@ -13,19 +13,22 @@
             <div class="col-8">
               <h3 class="mb-0">Category Management</h3>
             </div>
-           
+            <div _ngcontent-c8="" class="col-4 text-right">
+              <button _ngcontent-c8="" class="btn btn-sm btn-success" href="javascrip:void(0)"
+                (click)="newCategory()"><i class="ni ni-fat-add"></i></button>
+            </div>
           </div>
         </div>
         <div class="card-body">
 
-            <h6 class="heading-small text-muted mb-4">Tree View</h6>
-            <div class="col-md-12">
-              
-              <app-tree-view [data]="categoryTree"></app-tree-view>
-            
-            </div>
-            
-      
+          <h6 class="heading-small text-muted mb-4">Tree View</h6>
+          <div class="col-md-12">
+
+            <app-tree-view [data]="categoryTree"></app-tree-view>
+
+          </div>
+
+
         </div>
       </div>
     </div>

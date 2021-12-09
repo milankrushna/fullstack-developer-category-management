@@ -6,7 +6,10 @@
 <ul *ngFor="let dt of data;let i = index" class="m-2 border-1">
     <li class="form-control form-control-alternative height-auto">
         <span>- {{dt.name}}
-            <a href="javascript:void(0)" (click)="addCategory(dt,i)" class=""> <i class="ni ni-fat-add"></i></a>
+            &nbsp;<a href="javascript:void(0)" (click)="addCategory(dt,i)" class="text-success"> <i
+                    class="ni ni-fat-add"></i></a>&nbsp;
+            <a href="javascript:void(0)" (click)="updateCategory(dt,i)" class="text-primary"> <i
+                    class="ni ni-settings-gear-65"></i></a>&nbsp;
             <a href="javascript:void(0)" (click)="removeCategory(dt,i,data)" class="text-red"> <i
                     class="ni ni-fat-remove"></i></a>
 
